@@ -1,0 +1,14 @@
+# (opcional) ignorar arquivos pesados em geral
+*.laz
+*.las
+*.zip
+*.log
+tmp/
+temp/
+
+# ⚠️ NÃO ignore os chunks do Potree dentro de pointclouds/
+# Se já ignorou acima, re-inclua especificamente:
+!pointclouds/**
+!pointclouds/**/*.bin
+!pointclouds/**/*.octree
+!pointclouds/**/*.json
